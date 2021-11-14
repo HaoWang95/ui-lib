@@ -1,11 +1,6 @@
 import React from "react";
-import PropTypes from 'prop-types';
-import './Button.css';
-/**
- *
- * @param {*} props
- * @returns Button component
- */
+import "./Button.css";
+
 export default function Button(props) {
   const { variant = "primary", children, ...rest } = props;
   return (

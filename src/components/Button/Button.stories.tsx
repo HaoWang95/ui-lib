@@ -1,6 +1,6 @@
 import React from "react";
-import Button from "./Button";
 import { Meta, Story } from "@storybook/react";
+import Button from "./Button";
 
 export default {
   title: "Basic/Button",
@@ -36,27 +36,26 @@ export const TemplatePrimaryButton: Story = Template.bind({});
 
 TemplatePrimaryButton.args = {
   variant: 'primary',
-  children: 'Binded Primary'
+  content: 'Binded Primary'
 };
 
 export const TemplateSecondaryButton: Story = Template.bind({});
 
 TemplateSecondaryButton.args = {
   variant: 'secondary',
-  children: 'Binded Secondary'
+  content: 'Binded Secondary'
 };
-
 
 export const TemplateSuccessButton: Story = Template.bind({});
 
 TemplateSuccessButton.args = {
   variant: 'success',
-  children: 'Binded Success',
+  content: 'Binded Success',
 };
 
 export const TemplateDangerButton: Story = Template.bind({});
 
 TemplateDangerButton.args = {
   variant: 'danger',
-  children: 'Binded Danger'
+  content: 'Binded Danger'
 }
