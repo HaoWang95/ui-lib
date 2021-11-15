@@ -1,0 +1,13 @@
+input{
+    border-radius: .5rem;
+    color: blueviolet;
+    border-color: blueviolet;
+}
+
+input:hover{
+    border-color: red;
+}
+
+.taskitem-list{
+    width: fit-content;
+}
