@@ -1,0 +1,19 @@
+import styled from "styled-components";
+import { VFC } from "react";
+
+const Btn = styled.button`
+  background-color: pink;
+  border-radius: 2px;
+  border: none;
+  box-shadow: none;
+`;
+
+export type StyledButtonProps = {
+  text?: string;
+};
+
+export const StyledButton: VFC<StyledButtonProps> = ({
+  text,
+}: StyledButtonProps) => {
+  return <Btn>{text}</Btn>;
+};
