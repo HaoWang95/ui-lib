@@ -2,7 +2,8 @@ import styled from "styled-components";
 import { VFC } from "react";
 
 const Btn = styled.button`
-  background-color: pink;
+  background-color: #5aac44;
+  color: #fff;
   border-radius: 2px;
   border: none;
   box-shadow: none;

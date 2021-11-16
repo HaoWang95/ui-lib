@@ -1,5 +1,6 @@
 import { Story, Meta } from "@storybook/react";
 import { StyledButton, StyledButtonProps } from ".";
+import { Center } from "../../CenterTypeScript";
 
 export default {
   title: "StyledComponents/Button",
@@ -10,7 +11,21 @@ const ButtonTemplate: Story<StyledButtonProps> = (args: StyledButtonProps) => (
   <StyledButton {...args} />
 );
 
-export const StyledButtonSample: Story<StyledButtonProps> = ButtonTemplate.bind({});
+export const StyledButtonSample: Story<StyledButtonProps> = ButtonTemplate.bind(
+  {}
+);
 StyledButtonSample.args = {
-    text: "StyledButton",
-}
+  text: "StyledButton",
+};
+
+export const CenteredStyledButton: Story<StyledButtonProps> = (
+  args: StyledButtonProps
+) => (
+  <Center>
+    <StyledButton {...args} />
+  </Center>
+);
+
+CenteredStyledButton.args = {
+  text: "CenteredStyledButton",
+};
