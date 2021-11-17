@@ -29,3 +29,9 @@ export const CenteredStyledButton: Story<StyledButtonProps> = (
 CenteredStyledButton.args = {
   text: "CenteredStyledButton",
 };
+
+export const AddItemButton: Story<StyledButtonProps> = () => (
+  <Center>
+    <StyledButton>+ Add new item</StyledButton>
+  </Center>
+);

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { VFC } from "react";
+import { Children, ReactNode, VFC } from "react";
 
 const Btn = styled.button`
   background-color: #5aac44;
@@ -11,10 +11,12 @@ const Btn = styled.button`
 
 export type StyledButtonProps = {
   text?: string;
+  children?: ReactNode
 };
 
 export const StyledButton: VFC<StyledButtonProps> = ({
-  text,
+  text, children
 }: StyledButtonProps) => {
-  return <Btn>{text}</Btn>;
+  const content = children?children:(text?text:"+ Add ")
+  return <Btn>{content}</Btn>;
 };
