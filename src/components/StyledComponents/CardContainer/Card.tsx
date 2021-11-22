@@ -13,8 +13,9 @@ const StyledCard = styled.div`
 
 export type CardProps = {
   text: string;
+  id?: string
 };
 
-export const Card: VFC<CardProps> = ({ text }: CardProps) => {
-  return <StyledCard>{text ? text : "Task Card Content"}</StyledCard>;
+export const Card: VFC<CardProps> = ({ text, id }: CardProps) => {
+  return <StyledCard id={id}>{text ? text : "Task Card Content"}</StyledCard>;
 };
