@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { VFC, ReactNode } from "react";
 import { ColumnTitle } from "./ColumnTitle";
 import { Card } from "../CardContainer/Card";
+import { AddItemButton } from "../AddItemButton/AddItemButton";
 
 const StyledColumn = styled.div`
   background-color: #ebecf0;
@@ -23,6 +24,11 @@ export const Column: VFC<ColumnProps> = ({ text, children }: ColumnProps) => {
     <StyledColumn>
       <ColumnTitle text={text} />
       <Card text={text} />
+      <AddItemButton 
+        dark={true}
+      >
+        + Add a new item
+      </AddItemButton>
       {children? children : "Children cards components will be here"}
     </StyledColumn>
   );
